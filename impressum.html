@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<link href="stylesheets/screen.css" rel="stylesheet">
+    <title>Impressum</title>
+    <script type="text/javascript">
+
+    window.onload = 
+
+    function impress () {
+
+    	var basis = document.getElementById("imp");
+    	var h2 = document.createElement("h2");
+    	h2.innerHTML ="Impressum";
+        h2.style.cssText = 'text-align: center';
+    	var p = document.createElement("p");
+        var impText = "Verantwortlich für den Inhalt dieser Seite:<br><br>Hannus Elektrotechnik GmbH<br>Kottenheimer Weg 11 a<br>56727 Mayen<br>\r\n"
+            impText += "Tel. 0 26 51/4 80 31<br>info@hannus.de<br><br>";
+            
+
+    	p.innerHTML = impText;
+    	p.style.cssText = 'font-size: 11px';
+        var disclaimer = document.createElement("a");
+        disclaimer.setAttribute("href", "disclaimer.html");
+        disclaimer.innerHTML = "Disclaimer";
+       	basis.appendChild(h2);
+    	h2.appendChild(p);
+        p.appendChild(disclaimer);
+    }
+
+
+    </script>
+</head>
+<body>
+	<div id="imp">
+	</div>
+</body>
+</html>
