@@ -31,11 +31,8 @@ body {
 }
 .main-nav ul li a:hover, .main-nav ul li a:active {
 	color: red;
-
-
-	
-
 }
+
 a:hover, a:active {
 	/*border-bottom: 1px solid red;*/
 	color: red;
@@ -166,7 +163,6 @@ p, ul, ol {
 	}
 }
 
-
 .contact-box {
 	
 	margin-left: 18%;
@@ -197,6 +193,14 @@ and (max-device-width: 480px) {
     text-align: center;
     overflow: hidden;
 }
+}
+/*-----iPad--------------------*/
+@media screen and (min-device-width: 980px)
+and (max-device-width: 1360px){
+  .contact-box{
+    width: 830px;
+    margin-left: 9%;
+  }
 }
 
 .partners ul {
@@ -235,6 +239,14 @@ and (max-device-width: 480px) {
 	display: inline-block;
 	padding: 25px;
 }
+}
+/*-----iPad--------------------*/
+@media screen and (min-device-width: 980px)
+and (max-device-width: 1360px){
+  .partners ul {
+    width: 830px;
+    margin-left: 9%;
+  }
 }
 
 
@@ -306,6 +318,31 @@ figure figcaption {
 }
 
 .sr_pic { padding: 0.5em;}
+
+.pdf {
+
+  margin-left: 25px;
+  background-color: yellow;
+  color: red;
+  position: relative;
+  bottom: 10px;
+  padding: 5px;}
+
+@media screen and (min-device-width: 320px)
+and (max-device-width: 480px) {
+
+.pdf {
+  margin-left: 25px;
+  background-color: yellow;
+  color: red;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+  padding: 5px;}
+
+
+
+}
 
 .kreis {
 
@@ -528,6 +565,73 @@ figure figcaption {
 	padding: 0;
 }
 
+.Artikel_2 {
+  text-decoration: underline;
+  color: red;
+  background-color: lightgrey;
+  position: relative;
+  top: 40px;
+  left: 100px;
+  padding: 10px;
+}
+.Artikel_1 {
+  text-decoration: underline;
+  color: red;
+  background-color: lightgrey;
+  position: relative;
+  top: 20px;
+  left: 250px;
+  padding: 10px;
+}
+@media screen and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .Artikel_2 {
+  text-decoration: underline;
+  font-size: small;
+  color: red;
+  background-color: lightgrey;
+  position: relative;
+  top: 8px;
+  left: 0;
+  padding: 3px;
+}
+.Artikel_1 {
+  text-decoration: underline;
+  font-size: small;
+  color: red;
+  background-color: lightgrey;
+  position: relative;
+  top: 8px;
+  left: 0;
+  padding: 3px;
+}
+}
+
+.vid1{
+  margin-top: 100px;
+  position: relative;
+  left: 80px;
+}
+.vid2{
+  margin-top: 30px;
+  position: relative;
+  left: 80px
+}
+
+@media screen and (min-device-width: 320px)
+and (max-device-width: 480px) {
+.vid1{
+  margin-top: 30px;
+  position: relative;
+  left: 0;
+}
+.vid2{
+  margin-top: 10px;
+  position: relative;
+  left: 0;
+}
+}
+
 .button.button--blue {
     background-attachment: scroll;
     background-clip: border-box;
@@ -593,19 +697,25 @@ and (max-device-width: 480px) {
 	#bigPicture {
 		left: 0;
 		width: 375px;
-		top:0;
-		margin-bottom: 20px;
+		top: 0;
+    margin-bottom: 30px;
 	}
+}
+/*-----iPad--------------------*/
+@media screen and (min-device-width: 980px)
+and (max-device-width: 1360px){
+  #bigPicture {
+    width: 600px;
+    left: 9%;
+  }
 }
 @media screen and (min-width: 1368px) {
 #bigPicture {
-    
-    
+        
     left: 8%;
     margin-bottom: 300px;
     
-    
-}
+    }
 }
     
 .kreis_bh {
@@ -664,12 +774,15 @@ and (max-device-width: 480px) {
 }
 
 
-#bP {
+#bP 
+{
 	width: 870px;
 	height: 410px;
 }
+
 @media screen and (min-width: 1368px) {
-#bP {
+#bP 
+   {
     width: 1250px;
     height: 590px;
 }
@@ -691,7 +804,7 @@ and (max-device-width: 480px) {
 .haeins {
 	
 	text-decoration: underline;
-    clear: both;
+  clear: both;
 }
 
 /*----------------------CSS for tables------------------------------*/
@@ -729,7 +842,7 @@ td {
     cursor: pointer;
     box-shadow: 0 4px #b22222;
     -webkit-transition: background .15s linear,color .15s linear;
-    -moz-transition: background .15s linear, color .15s lienar;
+    -moz-transition: background .15s linear, color .15s linear;
     transition: background .15s linear, color .15s linear;
     text-align: center;
     display: inline-block;
@@ -770,7 +883,7 @@ td {
     float: left;
 }
 @media screen and (max-width: 375px){
-  .produdt1 {
+  .product1 {
     margin-bottom: 0;
     padding: 0;
 }
