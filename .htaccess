@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.hannus.de$
+RewriteRule ^(.*)$ http://www.hannus.de/$1 [R=301,L]

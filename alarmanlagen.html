@@ -7,10 +7,8 @@
   <meta content="de" name="language">
   <meta content="Wir sind der Anbieter No. 1 für Alarmanlagen im Raum Mayen-Koblenz. Wir sind zertifzierter VdS-Errichter und bieten einen 24h-Notfall-Service an." name="description">
 	<meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" name="viewport">
-	<meta content="Alarmanlagen, Einbruchmeldeanlagen, EMA, Alarmtechnik, Bewegungsmelder, Telenot, Daitem, Funkalarmanlage" name="keywords">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
 	<link href="screenEH.css" rel="stylesheet">
-	<link rel="canonical" href="http://www.hannus.de/leistungen.html">
 
     
     <!--Google Analytics-->
@@ -77,7 +75,8 @@
 						
 						
 					</p>
-					
+
+          				
 					<h1 id="teamEma" class="haeins">Team EMA</h1>
 					<h5>Unsere Spezialisten für Einbruchmeldetechnik</h5>
 					<section>
@@ -105,7 +104,7 @@
                        zertifizierten Technikern durchgeführt werden.<br />
                        <br />
                        Lesen Sie dazu auch den Artikel<br>
-                       <a class="Artikel_1" href="pdf/Alarm ist nicht gleich Alarm.pdf" target="_blank" alt="Artikel Alarm ist nicht gleich Alarm">Alarm ist nicht gleich Alarm</a>
+                       <a class="Artikel_1" href="http://hannus.de/pdf/alarm_ist_nicht_gleich_alarm.pdf" target="_blank" alt="Artikel Alarm ist nicht gleich Alarm" onclick="ga('send', 'event', 'article',   'read', 'AingA');">Alarm ist nicht gleich Alarm</a>
                        
                        </p>
                     <h2 id="whs">Aufschaltung zum Wachdienst: Bekommen Sie auch bei uns</h2>
@@ -117,25 +116,25 @@
                     <h2 id="kfw">Kfw-Förderung: Jetzt gibt es Zuschüsse für die Alarmanlage</h2>
 
                     <p>Seit November 2015 beteiligt sich die Bundesregierung finanziell an ihrem Einbruchschutz. Ab 2000 Euro Investionsvolumen steigt der Staat mit ein. Hören sie dazu unseren Podcast. Redakteurin Sabrina hakt bei Hannus-Geschäftsführer Oliver Hannus nach, wie man an die Förderung kommt:</p>
-                    <audio preload controls>
+                    <audio preload controls onplay="ga('send', 'event', 'Audio',
+                     'play', 'KfW_Interview'); goog_report_conversion ('audio/audio_interview_kfw.mp3');">
                     	<source src="audio/audio_interview_kfw.ogg" type="audio/ogg">
                     	<source src="audio/audio_interview_kfw.mp3" type="audio/mpeg">
                     	
                     </audio>
-                    <a class="pdf" download href="pdf/kfw_foerder
-                    ung.pdf">Download (pdf)</a>
+                    <a download href="pdf/Kfw_foerderung.pdf" class="pdf" onclick="ga('send', 'event', 'Download', 'article', 'Interview_transcript');">Download (pdf)</a>
                     
                     
 					<h1 id="funk">Funkalarmanlagen von Daitem</h1>
 					<p>Erfahren sie in diesem Artikel, welche Vorteile Funkalarmsysteme von Daitem bieten:<br />
-					<a class="Artikel_2" href="pdf/Alarm für Alle.pdf" target="_blank" alt="Artikel Alarm für Alle">Alarm für Alle: Alarmsysteme sind erschwinglich geworden</a>
+					<a class="Artikel_2" href="pdf/alarm_fuer_alle.pdf" target="_blank" alt="Artikel Alarm für Alle" onclick="ga('send', 'event', 'Article', 'read', 'AfA'); goog_report_conversion('pdf/alarm_fuer_alle.pdf');">Alarm für Alle: Alarmsysteme sind erschwinglich geworden</a>
 					</p>
                     <div class="vid1">
-                        <iframe width="540" height="260" src="https://www.youtube.com/embed/tQyPNncomOQ" frameborder="0" allowfullscreen id="vid1" name="Daitem Funkalarmanlage Rundflug Sicherheit"></iframe>
+                        <iframe width="540" height="260" src="https://www.youtube.com/embed/tQyPNncomOQ" frameborder="0" allowfullscreen id="vid1" name="Daitem Funkalarmanlage Rundflug Sicherheit" onplay="ga('send', 'event', 'Video', 'play', 'vid1'); goog_report_conversion ('https://www.youtube.com/embed/tQyPNncomOQ');"></iframe>
                     </div>
                     <br>
                     <div class="vid2">
-                        <iframe width="540" height="260" src="https://www.youtube.com/embed/7F247akgfcA" frameborder="0" allowfullscreen id="vid2" name="Daitem Funkalarmanlage D22"></iframe>  
+                        <iframe width="540" height="260" src="https://www.youtube.com/embed/7F247akgfcA" frameborder="0" allowfullscreen id="vid2" name="Daitem Funkalarmanlage D22" onplay="ga('send', 'event', 'Video', 'play', 'vid2');"></iframe>  
                     </div>
                         
                     
@@ -156,14 +155,16 @@
 	
 		<footer role="contentinfo" class="main-footer full-width clearfix">
 			<div class="wrapper clearfix">
-				<section class="main">
-			     <p class="copyright">
-				    &copy; Hannus Elektrotechnik GmbH 2016. All rights reserved.
-                                     <a href="impressum.html"><u>Impressum</u></a></p>
-             	</p>
-				</section>
+			<section class="main">
+           <p class="copyright">
+            Hannus Elektrotechnik GmbH 2017.
+                 <a href="impressum.html">Impressum.</a>
+                 <a href="datenschutz.html">Datenschutz</a>
+                 </p>
+              
+        </section>
                 <section>
-                     <p class="webOH">Webdesign by <a href="http://oliverhannus.de" target="_blank"><i>Oliver Hannus</i></a><br />
+                     <p class="webOH">Webdesign||SEO||Online-Marketing by <a href="http://oliverhannus.de" target="_blank"><i>Oliver Hannus</i></a><br />
                     <p class="hireMe">Ihnen gefällt diese Website? Sie wollen auch so eine?</p>
 							<a href="mailto:oliver@oliverhannus.de" class="button button--blue">Anfrage</a>
 
@@ -172,6 +173,104 @@
                 <a href="#top" class="nachOben">top</a>
 			</div>					
          </footer>
-				
+         <!-- Google Code for KfW_Interview Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 987437695;
+    w.google_conversion_label = "CVCTCNHl8moQ_7Ts1gM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
+<!-- Google Code for Alarm f&uuml;r Alle Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 987437695;
+    w.google_conversion_label = "CKAyCLO4pGsQ_7Ts1gM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
+				<!-- Google Code for Daitem-Videos Conversion Page
+In your html page, add the snippet and call
+goog_report_conversion when someone clicks on the
+chosen link or button. -->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 987437695;
+    w.google_conversion_label = "rJsfCJjv7moQ_7Ts1gM";
+    w.google_remarketing_only = false;
+  }
+  // DO NOT CHANGE THE CODE BELOW.
+  goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  }
+  var conv_handler = window['google_trackConversion'];
+  if (typeof(conv_handler) == 'function') {
+    conv_handler(opt);
+  }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+  src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
 	
 </body>			
+</html>

@@ -195,14 +195,20 @@ and (max-device-width: 480px) {
 }
 }
 /*-----iPad--------------------*/
-@media screen and (min-device-width: 980px)
-and (max-device-width: 1360px){
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: landscape){
   .contact-box{
     width: 830px;
     margin-left: 9%;
   }
 }
-
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: portrait){
+  .contact-box {
+    width: 600px;
+    margin-left: 9%;
+  }
+  }
 .partners ul {
 	
 	margin-left: 18%;
@@ -241,14 +247,38 @@ and (max-device-width: 480px) {
 }
 }
 /*-----iPad--------------------*/
-@media screen and (min-device-width: 980px)
-and (max-device-width: 1360px){
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: landscape){
   .partners ul {
     width: 830px;
     margin-left: 9%;
   }
 }
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: portrait){
+  .partners ul {
+    width: 600px;
+    margin-left: 9%;
+  }
+  }
 
+.g-pulse {
+
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* portrait and landscape */
+@media screen and (min-device-width: 320px) 
+and (max-device-width: 480px) {
+
+.g-pulse {
+
+  width: 70vw;
+  height: 700px;
+
+}
+}
 
 
 
@@ -302,15 +332,29 @@ figure figcaption {
 	color: #00bffF;
 }
 
-.messe {
+.brandaktuell {
     
     position: relative;
     top: 50px;
-    left: 9%;
+    left: 25%;
     font-size: 30px;
     color:#b22222;
     text-shadow: 0px 0px 20px;
     }
+
+@media screen and (min-device-width: 320px)
+and (max-device-width: 480px) {
+.brandaktuell {
+
+  font-size: 18px;
+  left: 8%;
+  width: 320px;
+  height: 250px;
+  text-align: center;
+  margin-bottom: 5px;
+  }
+
+}
     
 .messe_pic {
     
@@ -630,6 +674,11 @@ and (max-device-width: 480px) {
   position: relative;
   left: 0;
 }
+.vid3{
+  margin-top: 10px;
+  position: relative;
+  left: 0;
+}
 }
 
 .button.button--blue {
@@ -701,14 +750,23 @@ and (max-device-width: 480px) {
     margin-bottom: 30px;
 	}
 }
+
 /*-----iPad--------------------*/
-@media screen and (min-device-width: 980px)
-and (max-device-width: 1360px){
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: landscape){
   #bigPicture {
     width: 600px;
-    left: 9%;
+    left: 8%;
   }
 }
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) and (orientation: portrait){
+  #bigPicture {
+    width: 600px;
+    left: 0;
+  }
+  }
+
 @media screen and (min-width: 1368px) {
 #bigPicture {
         
@@ -902,10 +960,17 @@ td {
     padding-top: 0;
 }
 }
+.jj {clear: both;}
+
 @media screen and (max-width: 375px){
   #vid1, #vid2{
     width: 190px;
     height:105px;
+  }
+  #vid3{
+    width: 300px;
+    height: 210px;
+    left: 0;
   }
 }
 .heiko {
@@ -955,6 +1020,10 @@ td {
   background-color: rgba(0, 0, 0, .3);
 }
 
+.rich {
+
+  display: none;
+}
 
 
 
